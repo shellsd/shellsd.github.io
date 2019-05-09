@@ -1,65 +1,52 @@
-
-
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>Welcome</title>
+  <title>Summary</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
 </head>
 
 <body>
-  <!-- Header -->
-  <h1>Michelle's page</h1>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Changes in latitudes, changes in attitudes </a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="temp.html">Max Temperature</a></li>
+            <li><a href="humidity.html">Humidity</a></li>
+            <li><a href="cloudiness.html">Cloudiness</a></li>
+            <li><a href="windspeed.html">Wind Speed</a></li>            
+          </ul>
+        </li>
+        <li><a href="comparison.html">Comparison</a></li>
+        <li><a href="data.html">Data</a></li>
+      </ul>
+    </div>
+  </nav>     
+  <section>
+    <hr>
+    <h2>Summary: Latitude vs. X</h2>
+    <p>
+      The purpose of this project was to analyze how weather changes as you get closer to the equator.<br>
+       To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+      <article>
+        <a target="_blank" href="#">
+          <img src="https://openweathermap.org/themes/openweathermap/assets/img/Open-weather-main-page.png" alt="Cloudy Map">
+        </a>
+        <p><em>Weather is cool, yo</em></p>
+        </article>
 
-  <!-- Image -->
-  <img src="http://www.quickmeme.com/img/6f/6f3380eeb594bf24ec7e319020a0813b1a2dcd69e9d6be047aa2a8b7d88a6b69.jpg" alt="not impressed!" />
-  <br>
-
-Michelle is a mom first and foremost and loves spending time with her kids.<br>
-Since her kids love hockey, so does she.  The family travels all over the US <br>
-exploring various cities, and yes, hockey rinks.  This family time is amazing <br>
-and nothing could beat it. <br><br>
-Michelle also loves music.  Mostly of the jambands persuasion and even went on tour<br>
-with the Grateful Dead way back when.  
-
-<h3>Some Helpful Links</h3>
-<ul>
-  <li><a href="http://html5doctor.com/" target="_blank">Facebook</a></li>
-  <li><a href="https://developer.mozilla.org/en-US/" target="_blank">Twitter</a></li>
-  <li><a href="https://css-tricks.com/" target="_blank">Instagram</a></li>
-</ul>
-
-<table border="1">
-  <thead>
-    <tr>
-      <th colspan="4">Michelle's Favorite Things</th>
-    </tr>
-    <tr>
-      <th>Fave movies</th>
-      <th>Fave Songs</th>
-      <th>Fave books</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Almost Famous</td>
-      <td>Shine on you crazy diamond</td>
-      <td>The Dark Tower</td>
-      
-    </tr>
-    <tr>
-      <td>Forrest Gump</td>
-      <td>Julia Brown</td>
-      <td>Book 2</td>
-    </tr>
-    <tr>
-      <td>Slience of the Lambs</td>
-      <td>Stella Blue</td>
-      <td>$1,000</td>
-    </tr>
-
-
+  
 </body>
 
 </html>
