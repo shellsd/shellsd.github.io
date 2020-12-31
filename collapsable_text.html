@@ -1,28 +1,79 @@
-<div class="openberkeley-collapsible-container">
-<h2 class="openberkeley-collapsible-controller">Line of collapsible text</h2>
-<div class="openberkeley-collapsible-target">
-<p>In hac habitasse platea dictumst. Suspendisse dictum, velit vel vehicula gravida,
-turpis nulla dignissim nibh, a tristique enim dui vestibulum enim. Duis cursus
-euismod diam vitae gravida. Etiam a purus lorem.</p>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Board of Director Nominees</h2>
+
+
+
+<p>Click on a name to open or close their bio
+</p>
+<button type="button" class="collapsible">Ben Swain - ben.swain@juniorhurricanes.org</button>
+<div class="content">
+  <p>Ben is an innovative strategic consultant with nearly 30 years of professional experience in the non-profit sector, specializing in optimizing value for customers while maintaining a responsible budget. Over 10 of those years were in youth athletics as Program Director for Triangle FC (which later merged with CASL to form the NCFC Youth soccer organization). During his time at Triangle FC, the organization earned national recognition from United Soccer Leagues for operational excellence, created and grew one of the most successful annual showcase events in youth soccer, and became one of the most respected and recognized brands on the East Coast despite being geographically located in area with numerous competitors. 
+ <p>
+As a hockey parent of two, Ben has continued his commitment to youth sports in a volunteer capacity serving on the Board of Directors for the Triangle Youth Hockey Association (Hillsborough Sharks / Hillsborough Hogs) before joining the Junior Hurricanes as a team manager, an assistant coach, and, currently, as our Marketing Director. In this role, Ben has been a central figure in the growth of our brand and the creation of a new community following last year’s merger by:
+ <p>
+* Leading our social media efforts (including the #CarryTheFlag campaign)<br>
+* Strengthening relationships between our girls’ program and co-ed program<br>
+* Providing executive leadership with valuable data used to navigate the competitive landscape in North Carolina youth hockey<br>
+* Identifying opportunities for strategic partnerships to drive growth and ensure long-term program success
+ <p>
+As a Board Member, Ben will emphasize the strength of our program locally, the recognition of our program nationally, and most importantly, the reputation of our program among our players, coaches, and families. 
+</p>
 </div>
+<button type="button" class="collapsible">Open Section 2</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
-<div class="openberkeley-collapsible-container">
-<h2 class="openberkeley-collapsible-controller">Another line of collapsible text</h2>
-<div class="openberkeley-collapsible-target">
-<p>Here is another paragraph that will expand. It can be long or short. You can add
-any formatting and layout you want to a collapsible item. For example:</p>
-<h3>Here is a subheading</h3>
-<p>More text.</p>
-<table>
-<tbody>
-<tr><th>Table header</th><th>Table header 2</th></tr>
-<tr>
-<td>Content of table</td>
-<td>More content of table</td>
-</tr>
-</tbody>
-</table>
+<button type="button" class="collapsible">Open Section 3</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
-</div>
-<h2>No longer expanding!</h2>
-<p>This stuff is just regular.</p>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
